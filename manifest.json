@@ -1,0 +1,12 @@
+{
+  "name": "GYMLOG",
+  "short_name": "GYMLOG",
+  "description": "Personal gym log, progress tracker and workout game.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#070707",
+  "theme_color": "#070707",
+  "orientation": "portrait",
+  "icons": []
+}

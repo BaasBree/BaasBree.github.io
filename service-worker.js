@@ -1,5 +1,13 @@
-const CACHE_NAME = "gymlog-cache-v1";
-const APP_FILES = ["./", "./index.html", "./styles.css", "./app.js", "./manifest.json"];
+const CACHE_NAME = "gymlog-cache-v3";
+const APP_FILES = [
+  "./",
+  "./index.html",
+  "./styles.css?v=3",
+  "./data.js?v=3",
+  "./storage.js?v=3",
+  "./app.js?v=3",
+  "./manifest.json?v=3"
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_FILES)));

@@ -53,7 +53,7 @@ button {
     var(--bg);
   border-left: 1px solid rgba(255, 255, 255, 0.05);
   border-right: 1px solid rgba(255, 255, 255, 0.05);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .screen {
@@ -62,11 +62,21 @@ button {
 }
 
 .topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 14px;
-  margin-bottom: 26px;
+  min-height: 76px;
+  margin: -22px -18px 24px;
+  padding: 22px 18px 14px;
+  border-bottom: 1px solid rgba(255, 99, 28, 0.14);
+  background:
+    radial-gradient(circle at 82% -5%, rgba(255, 99, 28, 0.16), transparent 34%),
+    rgba(7, 7, 7, 0.94);
+  backdrop-filter: blur(14px);
 }
 
 .brand {
@@ -1134,6 +1144,10 @@ button {
     margin-block: 16px;
     min-height: calc(100vh - 32px);
     border-radius: 26px;
+  }
+
+  .topbar {
+    top: 16px;
   }
 }
 
